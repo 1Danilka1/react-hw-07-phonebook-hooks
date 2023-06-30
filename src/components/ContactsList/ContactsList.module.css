@@ -1,0 +1,35 @@
+.main_container {
+    border: solid black 1px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+.phonebook {
+    width: 200px;
+    height: 120px;
+    border: solid black 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightslategray;
+
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    margin-top: 10px;
+}
+
+.input {
+    margin-top: 10px;
+}
