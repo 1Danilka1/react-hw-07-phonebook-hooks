@@ -58,12 +58,14 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Phonebook</h1>
-        <ContactForm onSubmit={this.handleSubmit}/>
-        <h2>Contacts</h2>
-        <Filter onChange={this.handleFilter} filter={this.state.filter}/>
-        <ContactsList contacts={this.filterContacts()} onDelete={this.onDeleteContact}/>
+      <div className='container'>
+        <div className='main_container'>
+          <h1>Phonebook</h1>
+          <ContactForm onSubmit={this.handleSubmit}/>
+          <h2>Contacts</h2>
+          <Filter onChange={this.handleFilter} filter={this.state.filter}/>
+          <ContactsList contacts={this.filterContacts()} onDelete={this.onDeleteContact}/>
+        </div>
       </div>
     )
   }

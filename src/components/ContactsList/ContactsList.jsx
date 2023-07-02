@@ -6,7 +6,7 @@ function ContactList({contacts, onDelete}) {
   return(
     <ul className={css.list_contacts}>
         {contacts.map((contact) => (
-            <li id={contact.id} key={nanoid()} className={css.item_contact}>
+            <li id={contact.id} key={nanoid()} className={css.item}>
                 <p>{contact.name}: {contact.number}</p>
                 <button className={css.btn_delete} onClick={
                   () => {
